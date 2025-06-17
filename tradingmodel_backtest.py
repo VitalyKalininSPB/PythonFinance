@@ -42,8 +42,7 @@ class MarketDataSource(object):
     def fetch_historical_prices(self):
         import quandl
 
-        # Update your Quandl API key here...
-        QUANDL_API_KEY = 'BCzkk3NDWt7H9yjzx-DY'
+        QUANDL_API_KEY = 'tEsTkEy123456789'
         quandl.ApiConfig.api_key = QUANDL_API_KEY
         df = quandl.get(self.symbol, start_date=self.start, end_date=self.end)
         return df
